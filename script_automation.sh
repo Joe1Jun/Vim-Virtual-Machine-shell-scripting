@@ -9,5 +9,5 @@ uptime
 whoami
 who
 w
-top
+top -b -n1
 history
