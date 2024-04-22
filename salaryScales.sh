@@ -22,8 +22,12 @@ currentYear=2024
 #initialise salary varibale at the initial value of the user input
 
 salary=$startSalary
-
-echo "Salary Scale for employee $employeeID"
+echo " ------------------------------------- "
+echo "| Salary Scale for employee $employeeID |"
+echo " --------------------------------------"
+echo "-----------------------------------------------------------"
+echo "|  Year  |  Salary   |  Increment| Months of SalaryIncrease|"
+echo "-----------------------------------------------------------"
 
 #use for loop to iterate through the number of points on the scale
 
@@ -43,8 +47,8 @@ for (( i=0; i<=$numPoints; i++ )); do
     #print the current year incremented each time by the loop
     #print the new value stored in varibale salary after each loop
 
-    echo "|$((currentYear + i))          $salary|"
-    echo "--------------------------------------- "
+    echo "|$((currentYear + i))    | $salary     |  $salaryIncrement     | "
+    echo "---------------------------------------------------- "
    
 done
       
