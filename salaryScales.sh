@@ -27,38 +27,55 @@ managerMonth2="July"
 
 salary=$startSalary
 
-echo " ------------------------------------- "
-echo "| Salary Scale for employee $employeeID |"
-echo " --------------------------------------"
-echo "-----------------------------------------------------------"
-echo "|  Month and Year  | Salary Point | Salary  |  Increment|"
-echo "-----------------------------------------------------------"
+echo " --------------------------------------- "
+echo "| Salary Scale for employee $employeeID|"
+echo " ---------------------------------------"
+echo "-------------------------------------------------------------"
+echo "|  Month and Year  | Salary Point | Salary     |  Increment |"
+echo "-------------------------------------------------------------"
 
 #use for loop to iterate through the number of points on the scale
 
 for (( i=1; i<=$numPoints; i++ )); do
 
 	#if manager the salaryIncrement*2 is stored in the salary varibale
+        
+	
+	
+	if [ "$isManager" = "yes" ]; then
+		   echo "| $managerMonth1 $currentYear     |  $i           | $salary      | $salaryIncrement       | "
+                   echo "------------------------------------------------------------- "
 
-       	if [ "$isManager" = "yes" ]; then
-		
-
-     		   echo "| $managerMonth1 $((currentYear + i)) | Salary Point $i   | $salary      | $salaryIncrement     | "
-                   echo "---------------------------------------------------- "
+		   #add salary increment after each month which is equal to a point in the salary scale.
 		   ((salary += salaryIncrement))
-		   ((i++))
-		   echo "| $managerMonth2 $((currentYear + i))  | Salary Point $i  | $salary      | $salaryIncrement     | "
+
+		   #increment numPoints so that the salary points matches with the months
+
+	           pointsCounter=$((i + 1))
+                     		   
+		  echo "| $managerMonth2 $currentYear        |  $pointsCounter           | $salary      | $salaryIncrement       | "
 		  ((salary += salaryIncrement))
-		  echo "---------------------------------------------------- "
-       #otherwise the salary is incremented by the salary once
+		  echo "------------------------------------------------------------- "
+
+		  #increase current year by on at end of loop so the years for each month are the same for each iteration of the loop
+                  
+		  ((currentYear++))
+		  
+                  #increase i variable by one so that first month matches the salary point its associated with
+
+		  ((i++))
+
+                  #otherwise the salary is incremented by the salary once
 	else
+
+
                   ((salary += salaryIncrement))
-		  echo "| $employeeMonths $((currentYear + i)) | Salary Point $i   | $salary      | $salaryIncrement     | "
-		  echo "---------------------------------------------------- "
+		  echo "| $employeeMonths $((currentYear + i))    | Salary Point $i    | $salary  | $salaryIncrement       | "
+		  echo "------------------------------------------------------------ "
             
 	fi   
     
-   
+
 done
       
 
