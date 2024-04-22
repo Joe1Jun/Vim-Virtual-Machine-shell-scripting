@@ -1,0 +1,276 @@
+
+
+------------------------------- echo Hello World command ---------------------------------
+
+
+Hello World
+
+
+
+
+------------------------------- date command ---------------------------------
+
+
+Wed Apr 17 17:39:49 UTC 2024
+
+
+
+
+------------------------------- hostname command ---------------------------------
+
+
+JoeJunkerCATC
+
+
+
+
+------------------------------- arch command ---------------------------------
+
+
+x86_64
+
+
+
+
+------------------------------- uname -a command ---------------------------------
+
+
+Linux JoeJunkerCATC 5.15.0-1059-azure #67~20.04.1-Ubuntu SMP Tue Mar 12 18:58:58 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+
+
+
+------------------------------- uptime command ---------------------------------
+
+
+ 17:39:49 up  3:27,  1 user,  load average: 0.09, 0.02, 0.00
+
+
+
+
+------------------------------- whoami command ---------------------------------
+
+
+joejunker
+
+
+
+
+------------------------------- who command ---------------------------------
+
+
+joejunker pts/0        2024-04-17 14:12 (95.44.54.100)
+
+
+
+
+------------------------------- last command ---------------------------------
+
+
+joejunke pts/0        95.44.54.100     Wed Apr 17 14:12   still logged in
+reboot   system boot  5.15.0-1059-azur Wed Apr 17 14:12   still running
+joejunke pts/0        95.44.54.100     Thu Apr 11 17:18 - 18:18  (00:59)
+reboot   system boot  5.15.0-1059-azur Thu Apr 11 17:16 - 18:18  (01:01)
+joejunke pts/0        95.44.54.100     Wed Apr 10 14:04 - 15:26  (01:22)
+joejunke pts/0        95.44.54.100     Wed Apr 10 13:48 - 14:04  (00:15)
+reboot   system boot  5.15.0-1059-azur Wed Apr 10 13:17 - 15:27  (02:10)
+joejunke pts/0        95.44.54.100     Wed Apr 10 10:29 - 11:42  (01:13)
+joejunke pts/0        95.44.54.100     Wed Apr 10 10:16 - 10:26  (00:09)
+joejunke pts/0        95.44.54.100     Wed Apr 10 09:48 - 10:16  (00:27)
+joejunke pts/0        95.44.54.100     Wed Apr 10 09:43 - 09:48  (00:05)
+reboot   system boot  5.15.0-1059-azur Wed Apr 10 09:42 - 11:43  (02:00)
+joejunke pts/0        95.44.54.100     Tue Apr  9 18:45 - 18:53  (00:08)
+joejunke pts/0        95.44.54.100     Tue Apr  9 18:18 - 18:44  (00:26)
+reboot   system boot  5.15.0-1059-azur Tue Apr  9 18:17 - 18:53  (00:35)
+joejunke pts/0        95.44.54.100     Tue Apr  9 08:28 - 08:29  (00:00)
+reboot   system boot  5.15.0-1059-azur Tue Apr  9 08:27 - 08:29  (00:01)
+joejunke pts/0        95.44.54.100     Fri Mar 22 19:28 - 19:29  (00:00)
+joejunke pts/0        95.44.54.100     Fri Mar 22 18:33 - 19:28  (00:55)
+reboot   system boot  5.15.0-1059-azur Fri Mar 22 18:29 - 07:10  (12:40)
+
+wtmp begins Fri Mar 22 18:29:44 2024
+
+
+
+
+------------------------------- w command ---------------------------------
+
+
+ 17:39:49 up  3:27,  1 user,  load average: 0.09, 0.02, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+joejunke pts/0    95.44.54.100     14:12    5.00s  0.34s  0.00s w
+
+
+
+
+------------------------------- top -n 1 -b command ---------------------------------
+
+
+top - 17:39:49 up  3:27,  1 user,  load average: 0.09, 0.02, 0.00
+Tasks: 101 total,   1 running, 100 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    844.0 total,    275.2 free,    228.1 used,    340.7 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    468.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  103940  12928   8460 S   0.0   1.5   0:02.67 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns
+      7 root      20   0       0      0      0 I   0.0   0.0   0:04.98 kworker/0:0-events
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.40 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.63 rcu_sched
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.06 migration/0
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
+     19 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
+     23 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.41 kcompactd0
+     25 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
+     26 root      39  19       0      0      0 S   0.0   0.0   0:00.19 khugepaged
+     72 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
+     73 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
+     74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
+     75 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq
+     76 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ata_sff
+     77 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 md
+     78 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 edac-poller
+     79 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 hv_vmbus_con
+     80 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 hv_pri_chan
+     81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 hv_sub_chan
+     82 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
+     83 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
+     85 root       0 -20       0      0      0 I   0.0   0.0   0:00.13 kworker/0:1H-kblockd
+     87 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kswapd0
+     88 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthrea
+     90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nfit
+     92 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_0
+     94 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-wq
+     95 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-reset-wq
+     96 root      20   0       0      0      0 S   0.0   0.0   0:00.00 scsi_eh_1
+     97 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_0
+     98 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-delete-wq
+     99 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
+    100 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 vfio-irqfd-clea
+    104 root      20   0       0      0      0 S   0.0   0.0   0:00.28 hv_balloon
+    105 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
+    106 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
+    115 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
+    118 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
+    119 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
+    126 root      20   0       0      0      0 S   0.0   0.0   0:00.26 jbd2/sda1-8
+    127 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    166 root      19  -1   67404  29348  28140 S   0.0   3.4   0:00.81 systemd-journal
+    204 root      20   0   20072   5744   3896 S   0.0   0.7   0:00.11 systemd-udevd
+    224 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
+    281 root      20   0    2496    568    508 S   0.0   0.1   0:00.00 bpfilter_umh
+    290 root      20   0    4004   2928   1912 S   0.0   0.3   0:04.21 hv_kvp_daemon
+    403 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
+    404 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_rdacd
+    405 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
+    406 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_handlerd
+    407 root      rt   0  280328  18136   8212 S   0.0   2.1   0:00.84 multipathd
+    511 systemd+  20   0   27416   7628   6764 S   0.0   0.9   0:00.05 systemd-network
+    513 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/0:3-cgroup_pidlist_destroy
+    514 systemd+  20   0   24692  12248   8188 S   0.0   1.4   0:00.09 systemd-resolve
+    598 root      20   0       0      0      0 S   0.0   0.0   0:00.00 jbd2/sdb1-8
+    599 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
+    631 root      20   0  241052   7992   7032 S   0.0   0.9   0:00.38 accounts-daemon
+    638 root      20   0    8548   2884   2672 S   0.0   0.3   0:00.01 cron
+    639 message+  20   0    7608   4444   3624 S   0.0   0.5   0:00.06 dbus-daemon
+    647 _chrony   20   0    4828   2620   2292 S   0.0   0.3   0:02.97 chronyd
+    651 _chrony   20   0    4696    200      0 S   0.0   0.0   0:00.00 chronyd
+    652 root      20   0   29856  17188   9120 S   0.0   2.0   0:00.06 networkd-dispat
+    653 root      20   0  236436   9740   6788 S   0.0   1.1   0:00.01 polkitd
+    654 syslog    20   0  224500   6764   3664 S   0.0   0.8   0:00.12 rsyslogd
+    661 root      20   0 1245560  36408  18536 S   0.0   4.2   0:01.63 snapd
+    672 root      20   0   17328   7904   7004 S   0.0   0.9   0:00.05 systemd-logind
+    675 root      20   0  395592  12496  10516 S   0.0   1.4   0:00.04 udisksd
+    676 root      20   0   28788  19964   7744 S   0.0   2.3   0:00.24 python3
+    677 daemon    20   0    3804   2200   2020 S   0.0   0.3   0:00.00 atd
+    687 root      20   0    7360   2388   2264 S   0.0   0.3   0:00.00 agetty
+    692 root      20   0  245108  11936  10048 S   0.0   1.4   0:00.04 ModemManager
+    699 root      20   0    5836   1904   1792 S   0.0   0.2   0:00.16 agetty
+    738 root      20   0  108120  16948   9260 S   0.0   2.0   0:00.06 unattended-upgr
+    748 root      20   0   12196   7260   6336 S   0.0   0.8   0:00.44 sshd
+    761 root      20   0  402280  27936   9840 S   0.0   3.2   0:11.21 python3
+   1056 root      20   0   13812   8276   6812 S   0.0   1.0   0:00.01 sshd
+   1075 joejunk+  20   0   19076   9788   8264 S   0.0   1.1   0:00.06 systemd
+   1076 joejunk+  20   0  105156   4608      0 S   0.0   0.5   0:00.00 (sd-pam)
+   1194 joejunk+  20   0   13948   5708   4244 S   0.0   0.7   0:01.81 sshd
+   1198 joejunk+  20   0   10040   4968   3244 S   0.0   0.6   0:00.34 bash
+   4233 root      20   0       0      0      0 I   0.0   0.0   0:00.12 kworker/u2:1-events_unbound
+   4391 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/u2:0-events_unbound
+   4433 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/u2:2-events_power_efficient
+   4434 joejunk+  20   0    8756   3724   3196 S   0.0   0.4   0:00.00 commandOutputsT
+   4444 joejunk+  20   0   10876   3700   3240 R   0.0   0.4   0:00.00 top
+
+
+
+
+------------------------------- history 50 command ---------------------------------
+
+
+  457  echo -e "\n" >> JoeJunker.txt
+  458  w >> JoeJunker.txt
+  459  echo -e "\n" >> JoeJunker.txt
+  460  echo "------------- top command -----------------" >> JoeJunker.txt
+  461  echo -e "\n" >> JoeJunker.txt
+  462  top -b -n1 >> JoeJunker.txt
+  463  echo -e "\n" >> JoeJunker.txt
+  464  echo "------------- history command -----------------" >> JoeJunker.txt
+  465  echo -e "\n" >> JoeJunker.txt
+  466  history 30  >> JoeJunker.txt
+  467  # create commands array
+  468  commands_array=("echo hello world" "date" "hostname" "arch" "uname -a" "uptime" "whoami" "who" "last" "w" 	"top -b -n1 " "history 50")
+  469  	for commands in "${commands_array[@]}" do                    echo "$commands"	
+  470  # create commands array
+  471  commands_array=("echo hello world" "date" "hostname" "arch" "uname -a" "uptime" "whoami" "who" "last" "w" 	"top -b -n1 " "history 50")
+  472  	for commands in "${commands_array[@]}" do                    echo "$commands"	
+  473  # create commands array
+  474  commands_array=("echo hello world" "date" "hostname" "arch" "uname -a" "uptime" "whoami" "who" "last" "w" 	"top -b -n1 " "history 50")
+  475  	for commands in "${commands_array[@]}"; do                    echo "$commands"	 	   done
+  476  # create commands array
+  477  commands_array=("echo hello world" "date" "hostname" "arch" "uname -a" "uptime" "whoami" "who" "last" "w" 	"top -b -n1 " "history 50")
+  478  	for commands in "${commands_array[@]}"; do                    eval "$commands"	 	   done
+  479  # create commands array.
+  480  commands_array=("echo hello world" "date" "hostname" "arch" "uname -a" "uptime" "whoami" "who" "last" "w" 	"top -b -n1 " "history 50")
+  481  #use for loop to loop through array and eval command to execute the commands.
+  482  	for commands in "${commands_array[@]}"; do                    eval "$commands"	 	   done
+  483  # create commands array.
+  484  commands_array=("echo hello world" "date" "hostname" "arch" "uname -a" "uptime" "whoami" "who" "last" "w" 	"top -b -n1 " "history 50")
+  485  #use for loop to loop through array and eval command to execute the commands.
+  486  	for commands in "${commands_array[@]}"; do                    eval "$commands"	 	   done
+  487  #create an array of commands.
+  488  commands_array=(     "echo Hello World"     "date"     "hostname"     "arch"     "uname -a"     "uptime"     "whoami"     "who"     "last"     "w"     "top -n 1 -b"     "history 50" )
+  489  #create for loop to iterate over the array and execute commands.
+  490  for commands in "${commands_array[@]}"; do 	eval "$commands" done
+  491  #create an array of commands.
+  492  commands_array=(     "echo Hello World"     "date"     "hostname"     "arch"     "uname -a"     "uptime"     "whoami"     "who"     "last"     "w"     "top -n 1 -b"     "history 50" )
+  493  #create for loop to iterate over the array and execute commands.
+  494  for commands in "${commands_array[@]}"; do
+  495        echo -e "\n" >> "JoeJunker.txt";       echo "------------------------------- $commands command ---------------------------------" >> "JoeJunker.txt";       eval "$commands" >> "JoeJunker.txt" ;       echo -e "\n" >> "JoeJunker.txt"; done
+  496  #create an array of commands.
+  497  commands_array=(     "echo Hello World"     "date"     "hostname"     "arch"     "uname -a"     "uptime"     "whoami"     "who"     "last"     "w"     "top -n 1 -b"     "history 50" )
+  498  #create for loop to iterate over the array and execute commands.
+  499  for commands in "${commands_array[@]}"; do
+  500        echo -e "\n" >> "JoeJunker.txt";       echo "------------------------------- $commands command ---------------------------------" >> "JoeJunker.txt";       echo -e "\n" >> "JoeJunker.txt";       eval "$commands" >> "JoeJunker.txt" ;       echo -e "\n" >> "JoeJunker.txt"; done
+  501  #create an array of commands.
+  502  commands_array=(     "echo Hello World"     "date"     "hostname"     "arch"     "uname -a"     "uptime"     "whoami"     "who"     "last"     "w"     "top -n 1 -b"     "history 50" )
+  503  #clear file before writing to it
+  504  > "JoeJunker.txt"
+  505  #create for loop to iterate over the array and execute commands.
+  506  for commands in "${commands_array[@]}"; do
+      echo -e "\n" >> "JoeJunker.txt";       echo "------------------------------- $commands command ---------------------------------" >> "JoeJunker.txt";       echo -e "\n" >> "JoeJunker.txt";       eval "$commands" >> "JoeJunker.txt" ;       echo -e "\n" >> "JoeJunker.txt"; done
+
+
