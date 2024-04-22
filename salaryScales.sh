@@ -17,38 +17,47 @@ read isManager
 
 # initialise current year variable as this year
 
-currentYear=2024 
+currentYear=2024
+yearIncrement=1
+employeeMonths="January"
+managerMonth1="January"
+managerMonth2="July"
 
 #initialise salary varibale at the initial value of the user input
 
 salary=$startSalary
+
 echo " ------------------------------------- "
 echo "| Salary Scale for employee $employeeID |"
 echo " --------------------------------------"
 echo "-----------------------------------------------------------"
-echo "|  Year  |  Salary   |  Increment| Months of SalaryIncrease|"
+echo "|  Month and Year  | Salary Point | Salary  |  Increment|"
 echo "-----------------------------------------------------------"
 
 #use for loop to iterate through the number of points on the scale
 
-for (( i=0; i<=$numPoints; i++ )); do
+for (( i=1; i<=$numPoints; i++ )); do
 
 	#if manager the salaryIncrement*2 is stored in the salary varibale
-        
+
        	if [ "$isManager" = "yes" ]; then
-       
-     		((salary += salaryIncrement * 2))
-     
+		
+
+     		   echo "| $managerMonth1 $((currentYear + i)) | Salary Point $i   | $salary      | $salaryIncrement     | "
+                   echo "---------------------------------------------------- "
+		   ((salary += salaryIncrement))
+		   ((i++))
+		   echo "| $managerMonth2 $((currentYear + i))  | Salary Point $i  | $salary      | $salaryIncrement     | "
+		  ((salary += salaryIncrement))
+		  echo "---------------------------------------------------- "
        #otherwise the salary is incremented by the salary once
 	else
                   ((salary += salaryIncrement))
-    fi
-   
-    #print the current year incremented each time by the loop
-    #print the new value stored in varibale salary after each loop
-
-    echo "|$((currentYear + i))    | $salary     |  $salaryIncrement     | "
-    echo "---------------------------------------------------- "
+		  echo "| $employeeMonths $((currentYear + i)) | Salary Point $i   | $salary      | $salaryIncrement     | "
+		  echo "---------------------------------------------------- "
+            
+	fi   
+    
    
 done
       
