@@ -1,24 +1,25 @@
 #!/bin/bash
 
-
-echo "Salary Scales"
+echo " ----------------------------------------- "
+echo " |          Salary Scales                | "
+echo " ----------------------------------------- "
 #each echo command promts the user to enter information.
-echo "Enter Employee ID"
+echo "Enter Employee ID :"
 #read stores the input from the user into the variable declared after it
 read employeeID
-echo "Enter starting salary"
+echo "Enter starting salary :"
 read startSalary
-echo "Enter number of points on salary scale"
+echo "Enter number of points on salary scale :"
 read numPoints
-echo "Enter Salary increment"
+echo "Enter Salary increment :"
 read salaryIncrement
 echo "Is the employee a manager? (yes/no):"
 read isManager
 
 # initialise current year variable as this year
+# initialise months for manager and for employees where increments take place
 
 currentYear=2024
-yearIncrement=1
 employeeMonths="January"
 managerMonth1="January"
 managerMonth2="July"
@@ -27,21 +28,28 @@ managerMonth2="July"
 
 salary=$startSalary
 
+#print headings for for loop
+
 echo " --------------------------------------- "
-echo "| Salary Scale for employee $employeeID|"
+echo "| Salary Scale for employee $employeeID        |"
 echo " ---------------------------------------"
 echo "-------------------------------------------------------------"
 echo "|  Month and Year  | Salary Point | Salary     |  Increment |"
 echo "-------------------------------------------------------------"
 
+
 #use for loop to iterate through the number of points on the scale
+
+
 
 for (( i=1; i<=$numPoints; i++ )); do
 
-	#if manager the salaryIncrement*2 is stored in the salary varibale
+	
         
 	
-	
+	#if manager salary is incremented twice per year in January and July 
+	#if statement is modified to output this
+
 	if [ "$isManager" = "yes" ]; then
 		   echo "| $managerMonth1 $currentYear     |  $i           | $salary      | $salaryIncrement       | "
                    echo "------------------------------------------------------------- "
@@ -66,17 +74,27 @@ for (( i=1; i<=$numPoints; i++ )); do
 		  ((i++))
 
                   #otherwise the salary is incremented by the salary once
-	else
+	 elif [ "$isManager" = "no" ];then
 
 
                   ((salary += salaryIncrement))
-		  echo "| $employeeMonths $((currentYear + i))    | Salary Point $i    | $salary  | $salaryIncrement       | "
-		  echo "------------------------------------------------------------ "
-            
+		  echo "| $employeeMonths $((currentYear + i))     |  $i           | $salary      | $salaryIncrement       | "
+		  echo "------------------------------------------------------------- "
+          
+          #adding an option if invalid selction is made more manager
+
+	  else 
+
+
+		  echo      "Invalid option please type either yes or no!"
+
+                            echo "Is the employee a manager? (yes/no):"
+                            read isManager
+			    #reset loop so they full number of iterations runs
+			    (( i = 0))
 	fi   
     
 
-done
-      
+  done      
 
 
