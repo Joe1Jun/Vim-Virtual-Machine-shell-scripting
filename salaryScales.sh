@@ -4,20 +4,43 @@ echo " ----------------------------------------- "
 echo " |          Salary Scales                | "
 echo " ----------------------------------------- "
 #each echo command promts the user to enter information.
-echo "Enter Employee ID :"
+echo  "Enter Employee ID :"
 #read stores the input from the user into the variable declared after it
-read employeeID
-echo "Enter starting salary :"
-read startSalary
-echo "Enter number of points on salary scale :"
-read numPoints
-echo "Enter Salary increment :"
-read salaryIncrement
-echo "Is the employee a manager? (yes/no):"
-read isManager
+read  employeeID
+echo  "Enter starting salary :"
+read  startSalary
+echo  "Enter number of points on salary scale :"
+read  numPoints
+echo  "Enter Salary increment :"
+read  salaryIncrement
+
+
+
+
+
+#use while true loop.This is an indefinite loop and will run until there is a break command 
+
+while true; do 
+
+
+     echo "Is the employee a manager? yes/no: "
+     read isManager
+
+     #if yes or no the program breaks out of the loop
+
+     if [ $isManager = "yes" ] || [ $isManager = "no" ]; then
+	    break
+     else
+         echo    "Invalid option. Please enter 'yes' or 'no'."  
+
+     fi
+
+done
 
 # initialise current year variable as this year
 # initialise months for manager and for employees where increments take place
+
+
 
 currentYear=2024
 employeeMonths="January"
@@ -27,8 +50,6 @@ managerMonth2="July"
 #initialise salary varibale at the initial value of the user input
 
 salary=$startSalary
-
-#print headings for for loop
 
 echo " --------------------------------------- "
 echo "| Salary Scale for employee $employeeID        |"
@@ -50,7 +71,9 @@ for (( i=1; i<=$numPoints; i++ )); do
 	#if manager salary is incremented twice per year in January and July 
 	#if statement is modified to output this
 
-	if [ "$isManager" = "yes" ]; then
+	if [ $isManager = "yes" ]; then
+		 
+
 		   echo "| $managerMonth1 $currentYear     |  $i           | $salary      | $salaryIncrement       | "
                    echo "------------------------------------------------------------- "
 
@@ -61,37 +84,28 @@ for (( i=1; i<=$numPoints; i++ )); do
 
 	           pointsCounter=$((i + 1))
                      		   
-		  echo "| $managerMonth2 $currentYear        |  $pointsCounter           | $salary      | $salaryIncrement       | "
-		  ((salary += salaryIncrement))
-		  echo "------------------------------------------------------------- "
+		   echo "| $managerMonth2 $currentYear        |  $pointsCounter           | $salary      | $salaryIncrement       | "
+		   ((salary += salaryIncrement))
+		   echo "------------------------------------------------------------- "
 
-		  #increase current year by on at end of loop so the years for each month are the same for each iteration of the loop
+		   #increase current year by one at end of loop so the years for each month are the same for each iteration of the loop
                   
-		  ((currentYear++))
+		   ((currentYear++))
 		  
-                  #increase i variable by one so that first month matches the salary point its associated with
+                   #increase i variable by one so that first month matches the salary point it is associated with
 
-		  ((i++))
+		   ((i++))
 
-                  #otherwise the salary is incremented by the salary once
-	 elif [ "$isManager" = "no" ];then
-
-
-                  ((salary += salaryIncrement))
-		  echo "| $employeeMonths $((currentYear + i))     |  $i           | $salary      | $salaryIncrement       | "
-		  echo "------------------------------------------------------------- "
-          
-          #adding an option if invalid selction is made more manager
-
+                   #if employee salary is incremented only once per year
+	  
 	  else 
 
 
-		  echo      "Invalid option please type either yes or no!"
-
-                            echo "Is the employee a manager? (yes/no):"
-                            read isManager
-			    #reset loop so they full number of iterations runs
-			    (( i = 0))
+                   ((salary += salaryIncrement))
+		   echo "| $employeeMonths $((currentYear + i))     |  $i           | $salary      | $salaryIncrement       | "
+		   echo "------------------------------------------------------------- "
+          
+          
 	fi   
     
 
