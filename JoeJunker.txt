@@ -7,7 +7,7 @@ Hello World
 ------------- date command -----------------
 
 
-Fri May 10 16:56:41 UTC 2024
+Fri May 10 17:11:27 UTC 2024
 
 
 ------------- hostname command -----------------
@@ -31,6 +31,7 @@ Linux JoeJunkerCATC 5.15.0-1059-azure #67~20.04.1-Ubuntu SMP Tue Mar 12 18:58:58
 ------------- uptime command -----------------
 
 
+ 17:11:27 up 25 min,  1 user,  load average: 0.00, 0.00, 0.00
 
 
 ------------- whomai command -----------------
@@ -48,22 +49,22 @@ joejunker pts/0        2024-05-10 16:46 (95.44.54.100)
 ------------- w command -----------------
 
 
- 16:56:41 up 10 min,  1 user,  load average: 0.00, 0.03, 0.04
+ 17:11:27 up 25 min,  1 user,  load average: 0.00, 0.00, 0.00
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
-joejunke pts/0    95.44.54.100     16:46    1.00s  0.03s  0.00s w
+joejunke pts/0    95.44.54.100     16:46    7.00s  0.06s  0.00s w
 
 
 ------------- top command -----------------
 
 
-top - 16:56:41 up 10 min,  1 user,  load average: 0.00, 0.03, 0.04
+top - 17:11:27 up 25 min,  1 user,  load average: 0.00, 0.00, 0.00
 Tasks: 101 total,   1 running, 100 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
-MiB Mem :    844.0 total,    243.4 free,    239.1 used,    361.5 buff/cache
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem 
+MiB Mem :    844.0 total,    238.7 free,    230.4 used,    374.9 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    467.2 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0  103960  12660   8208 S   0.0   1.5   0:02.04 systemd
+      1 root      20   0  103960  12660   8208 S   0.0   1.5   0:02.06 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp
@@ -73,8 +74,8 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
      10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq
      11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_
      12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace
-     13 root      20   0       0      0      0 S   0.0   0.0   0:00.18 ksoftirqd/0
-     14 root      20   0       0      0      0 I   0.0   0.0   0:00.48 rcu_sched
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.20 ksoftirqd/0
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.49 rcu_sched
      15 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migration/0
      17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
      18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs
@@ -83,9 +84,9 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
      21 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd
      22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper
      23 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback
-     24 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kcompactd0
+     24 root      20   0       0      0      0 S   0.0   0.0   0:00.03 kcompactd0
      25 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
-     26 root      39  19       0      0      0 S   0.0   0.0   0:00.01 khugepaged
+     26 root      39  19       0      0      0 S   0.0   0.0   0:00.02 khugepaged
      72 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd
      73 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd
      74 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio
@@ -98,7 +99,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
      81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 hv_sub_chan
      82 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 devfreq_wq
      83 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 watchdogd
-     85 root       0 -20       0      0      0 I   0.0   0.0   0:00.02 kworker/0:1H-kblockd
+     85 root       0 -20       0      0      0 I   0.0   0.0   0:00.03 kworker/0:1H-kblockd
      87 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kswapd0
      88 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ecryptfs-kthrea
      90 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kthrotld
@@ -111,266 +112,264 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
      98 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 nvme-delete-wq
      99 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 scsi_tmf_1
     100 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 vfio-irqfd-clea
-    101 root      20   0       0      0      0 I   0.0   0.0   0:00.56 kworker/u2:3-events_unbound
-    105 root      20   0       0      0      0 S   0.0   0.0   0:00.01 hv_balloon
+    101 root      20   0       0      0      0 I   0.0   0.0   0:00.61 kworker/u2:3-events_unbound
+    105 root      20   0       0      0      0 S   0.0   0.0   0:00.03 hv_balloon
     106 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mld
     107 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ipv6_addrconf
     116 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kstrp
     119 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 zswap-shrink
     120 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/u3:0
-    127 root      20   0       0      0      0 S   0.0   0.0   0:00.02 jbd2/sda1-8
+    127 root      20   0       0      0      0 S   0.0   0.0   0:00.04 jbd2/sda1-8
     128 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
-    167 root      19  -1   60292  23580  22376 S   0.0   2.7   0:00.27 systemd-journal
-    207 root      20   0   20652   6584   4224 S   0.0   0.8   0:00.20 systemd-udevd
+    167 root      19  -1   60292  23584  22380 S   0.0   2.7   0:00.27 systemd-journal
+    207 root      20   0   20652   6584   4224 S   0.0   0.8   0:00.21 systemd-udevd
     228 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 cryptd
     306 root      20   0    2496    576    508 S   0.0   0.1   0:00.00 bpfilter_umh
-    308 root      20   0    4004   2944   1928 S   0.0   0.3   0:00.26 hv_kvp_daemon
+    308 root      20   0    4004   2944   1928 S   0.0   0.3   0:00.56 hv_kvp_daemon
     407 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kaluad
     408 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_rdacd
     409 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpathd
     410 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kmpath_handlerd
-    411 root      rt   0  280328  18136   8212 S   0.0   2.1   0:00.05 multipathd
+    411 root      rt   0  280328  18136   8212 S   0.0   2.1   0:00.09 multipathd
     515 systemd+  20   0   27416   7524   6652 S   0.0   0.9   0:00.03 systemd-network
     517 systemd+  20   0   24692  12228   8164 S   0.0   1.4   0:00.05 systemd-resolve
     601 root      20   0       0      0      0 S   0.0   0.0   0:00.00 jbd2/sdb1-8
     602 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 ext4-rsv-conver
-    634 root      20   0  241052  11208   8216 S   0.0   1.3   0:00.02 accounts-daemon
+    634 root      20   0  241052  11208   8216 S   0.0   1.3   0:00.04 accounts-daemon
     642 root      20   0    8548   2820   2608 S   0.0   0.3   0:00.00 cron
     643 message+  20   0    7616   4604   4064 S   0.0   0.5   0:00.05 dbus-daemon
     651 root      20   0   29856  18444  10376 S   0.0   2.1   0:00.06 networkd-dispat
     653 root      20   0  236436   9068   8152 S   0.0   1.0   0:00.01 polkitd
     654 syslog    20   0  224500   7136   3836 S   0.0   0.8   0:00.01 rsyslogd
-    657 _chrony   20   0    4828   2616   2288 S   0.0   0.3   0:00.11 chronyd
-    661 root      20   0 1245560  42084  18688 S   0.0   4.9   0:01.72 snapd
+    657 _chrony   20   0    4828   2616   2288 S   0.0   0.3   0:00.28 chronyd
+    661 root      20   0 1245560  42044  18688 S   0.0   4.9   0:01.74 snapd
     663 _chrony   20   0    4696    196      0 S   0.0   0.0   0:00.00 chronyd
     665 root      20   0   17320   7856   6960 S   0.0   0.9   0:00.04 systemd-logind
-    671 root      20   0  395596  13876  11872 S   0.0   1.6   0:00.03 udisksd
-    672 root      20   0   28784  21080   8864 S   0.0   2.4   0:00.18 python3
+    671 root      20   0  395596  15900  11872 S   0.0   1.8   0:00.03 udisksd
+    672 root      20   0   28784  21092   8864 S   0.0   2.4   0:00.20 python3
     673 daemon    20   0    3804   2400   2228 S   0.0   0.3   0:00.00 atd
     683 root      20   0    7360   2192   2068 S   0.0   0.3   0:00.00 agetty
     694 root      20   0    5836   1788   1672 S   0.0   0.2   0:00.14 agetty
     710 root      20   0  318832  13232  11328 S   0.0   1.5   0:00.04 ModemManager
     720 root      20   0   12196   7340   6408 S   0.0   0.8   0:00.02 sshd
     731 root      20   0  108120  21024  13332 S   0.0   2.4   0:00.06 unattended-upgr
-    734 root      20   0  402284  32348  10628 S   0.0   3.7   0:01.02 python3
+    734 root      20   0  402284  32352  10628 S   0.0   3.7   0:01.67 python3
    1032 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:6
-   1033 root      20   0       0      0      0 I   0.0   0.0   0:00.20 kworker/0:7-events
+   1033 root      20   0       0      0      0 I   0.0   0.0   0:00.51 kworker/0:7-events
    1039 root      20   0   13820   9152   7684 S   0.0   1.1   0:00.01 sshd
    1042 joejunk+  20   0   19080   9596   8064 S   0.0   1.1   0:00.05 systemd
    1043 joejunk+  20   0  105176   4608     12 S   0.0   0.5   0:00.00 (sd-pam)
-   1158 joejunk+  20   0   13952   5964   4492 S   0.0   0.7   0:00.13 sshd
-   1159 joejunk+  20   0   10040   5068   3304 S   0.0   0.6   0:00.03 bash
-   1203 root      20   0       0      0      0 I   0.0   0.0   0:00.02 kworker/u2:0-events_unbound
-   1324 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/u2:1-events_power_e+
-   1325 joejunk+  20   0    8756   3740   3236 S   0.0   0.4   0:00.00 commandOutputsT
-   1334 joejunk+  20   0   10876   3776   3316 R   0.0   0.4   0:00.00 top
-   42  vim script_automation.sh
-   43  git commit -m "Initial commit: Added initial version of automation script for executing system commands"
-   44  git commit -m "Added in echo command"
-   45  git push 
-   46  git add scipt_automation.sh
-   47  ls
-   48  git add script_automation.sh
-   49  git commit -m "Updated to add the echo command"
-   50  git push
-   51  vim script_automation.sh
-   52  vim JoeJunker.txt
-   53  ls
-   54  vim outputToTextFile.sh
-   55  chmod u+x script.automation.sh
-   56  chmod u+x script_automation.sh
-   57  ./script_automation.sh
-   58  top -b -n1 
-   59  vim script_automation.sh
-   60  ./script_automation.sh
-   61  history
-   62  ./script_automation.sh
-   63  git add script_automation.sh
-   64  git commit -m "Updated top command so its in batch mode and only runs one iteration"
-   65  git push
-   66  vim script_automation.sh
-   67  ./script_automation.sh
-   68  vim script_automation.sh
-   69  ./script_automation.sh
-   70  vim script_automation.sh
-   71  ./script_automation.sh
-   72  vim script_automation.sh
-   73  git add script_automation.sh
-   74  git commit -m "Redirected bash_history file inside the .sh filke to enable history command"
-   75  git push
-   76  git commit --amend
+   1158 joejunk+  20   0   13952   5964   4492 S   0.0   0.7   0:00.37 sshd
+   1159 joejunk+  20   0   10168   5076   3304 S   0.0   0.6   0:00.06 bash
+   1398 root      20   0       0      0      0 I   0.0   0.0   0:00.04 kworker/u2:0-events_unbound
+   1426 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/u2:1-events_power_e+
+   1445 joejunk+  20   0    8756   3596   3096 S   0.0   0.4   0:00.00 commandOutputsT
+   1454 joejunk+  20   0   10876   3680   3224 R   0.0   0.4   0:00.00 top
+   44  vim  commandOutputsToTextFile.sh
+   45  git status
+   46  ls
+   47  rm JoeJunker.txt
+   48  git add commandOutputsToTextFile.sh
+   49  git commit -m "Created an array of commands and a for loop to iterate over commands one at a time. No formatting"
+   50  git push --force
+   51  git status
+   52  vim  commandOutputsToTextFile.sh
+   53  git status
+   54  git add -f commandOutputsToTextFile.sh
+   55  git commit -m "Created an array of commands and a for loop to iterate over commands one at a time. No formatting"
+   56  git push 
+   57  git log
+   58  git reset --hard 954c8489307b2dfbe8204dfef2a8a9241b6cdd62
+   59  git push --force
+   60  git add commandOutputsToTextFile.sh
+   61  git status
+   62  git commit -m "Created an array of commands and a for loop to iterate over commands one at a time. No formatting"
+   63  git push
+   64  pwd
+   65  ls
+   66  commandOutputsToTextFile.sh
+   67  cd commandOutputsToTextFile.sh
+   68  git status
+   69  vim  commandOutputsToTextFile.sh
+   70  chmod u+x  commandOutputsToTextFile.sh
+   71  ./ commandOutputsToTextFile.sh
+   72  ./commandOutputsToTextFile.sh
+   73  vim  commandOutputsToTextFile.sh
+   74  git add  commandOutputsToTextFile.sh
+   75  git status
+   76  git commit -m "Added an array and for loop to iterate through array of commands and execute them one at a time"
    77  git push
-   78  git push --force
-   79  ./script_automation.sh
-   80  ls
-   81  outputCommandsOutputsToTextFile.sh
+   78  vim JoeJunker.txt
+   79  vim  commandOutputsToTextFile.sh
+   80  ./commandOutputsToTextFile.sh
+   81  vim JoeJunker.txt
    82  vim  commandOutputsToTextFile.sh
-   83  vim script_automation.sh
-   84  vim  commandOutputsToTextFile.sh
-   85  chmod u+x  commandOutputsToTextFile.sh
+   83  ./commandOutputsToTextFile.sh
+   84  vim JoeJunker.txt
+   85  vim  commandOutputsToTextFile.sh
    86  ./commandOutputsToTextFile.sh
-   87  git add commandOutputsToTextFile.sh
-   88  git commit -m "Initial commit raw and unformatted"
-   89  git push
-   90  vim  commandOutputsToTextFile.sh
-   91  ./commandOutputsToTextFile.sh
-   92  vim  commandOutputsToTextFile.sh
-   93  ./commandOutputsToTextFile.sh
+   87  vim JoeJunker.txt
+   88  git add  commandOutputsToTextFile.sh
+   89  git commit -m "Appended command executions to text file and used echo to format headings and spaces.Also made sure file is cleared before loop starts"
+   90  git push
+   91  ls -l
+   92  vim JoeJunker.txt
+   93  open JoeJunker.txt
    94  vim JoeJunker.txt
-   95  ls
-   96  vim JoeJunker.txt
-   97  ./commandOutputsToTextFile.sh
-   98  vim JoeJunker.txt
-   99  vim  commandOutputsToTextFile.sh
-  100  ./commandOutputsToTextFile.sh
-  101  vim JoeJunker.txt
-  102  vim  commandOutputsToTextFile.sh
-  103  ./commandOutputsToTextFile.sh
-  104  vim JoeJunker.txt
-  105  ./commandOutputsToTextFile.sh
-  106  vim  commandOutputsToTextFile.sh
-  107  ./commandOutputsToTextFile.sh
-  108  vim JoeJunker.txt
-  109  vim  commandOutputsToTextFile.sh
-  110  git add  commandOutputsToTextFile.sh
-  111  git commit -m "OutputToTextFile Added echo commands for headings and formatting. Adjusted start of script to overwrite the text file each time script is executed. Adjusted history to display only 50 previous"  
-  112  git push
-  113  vim  commandOutputsToTextFile.sh
-  114  ./commandOutputsToTextFile.sh
-  115  vim  commandOutputsToTextFile.sh
-  116  ./commandOutputsToTextFile.sh
-  117  vim  commandOutputsToTextFile.sh
-  118  ./commandOutputsToTextFile.sh
-  119  vim  commandOutputsToTextFile.sh
-  120  ./commandOutputsToTextFile.sh
-  121  vim  commandOutputsToTextFile.sh
-  122  git add  commandOutputsToTextFile.sh
-  123  git commit -m  "Created an array of commands and a for loop to iterate through the commands executing one at a time. No Formatting yet"
-  124  git push
-  125  ./commandOutputsToTextFile.sh
-  126  vim  commandOutputsToTextFile.sh
-  127  git add  commandOutputsToTextFile.sh
-  128  git commit -m "Created an array of commands and a for loop to iterate through the co…
-  129  \
-  130  git commit -m "Created an array of commands and a for loop to iterate through the commands one at a time. No Formatting yet."
-  131  git add  commandOutputsToTextFile.sh
-  132  git commit -m "Created an array of commands and a for loop to iterate through the commands one at a time. No Formatting yet."
-  133  git push --force
-  134  vim  commandOutputsToTextFile.sh
-  135  git add commandOutputsToTextFile.sh
-  136  git commit -m "Created an array of commands and a for loop to iterate over commands one at a time. No formatting"
-  137  git push --force
-  138  vim  commandOutputsToTextFile.sh
-  139  ./commandOutputsToTextFile.sh
-  140  vim  commandOutputsToTextFile.sh
-  141  git status
-  142  ls
-  143  rm JoeJunker.txt
-  144  git add commandOutputsToTextFile.sh
-  145  git commit -m "Created an array of commands and a for loop to iterate over commands one at a time. No formatting"
-  146  git push --force
-  147  git status
-  148  vim  commandOutputsToTextFile.sh
-  149  git status
-  150  git add -f commandOutputsToTextFile.sh
-  151  git commit -m "Created an array of commands and a for loop to iterate over commands one at a time. No formatting"
-  152  git push 
-  153  git log
-  154  git reset --hard 954c8489307b2dfbe8204dfef2a8a9241b6cdd62
-  155  git push --force
-  156  git add commandOutputsToTextFile.sh
-  157  git status
-  158  git commit -m "Created an array of commands and a for loop to iterate over commands one at a time. No formatting"
-  159  git push
-  160  pwd
-  161  ls
-  162  commandOutputsToTextFile.sh
-  163  cd commandOutputsToTextFile.sh
-  164  git status
-  165  vim  commandOutputsToTextFile.sh
-  166  chmod u+x  commandOutputsToTextFile.sh
-  167  ./ commandOutputsToTextFile.sh
-  168  ./commandOutputsToTextFile.sh
-  169  vim  commandOutputsToTextFile.sh
-  170  git add  commandOutputsToTextFile.sh
-  171  git status
-  172  git commit -m "Added an array and for loop to iterate through array of commands and execute them one at a time"
-  173  git push
-  174  vim JoeJunker.txt
-  175  vim  commandOutputsToTextFile.sh
-  176  ./commandOutputsToTextFile.sh
-  177  vim JoeJunker.txt
-  178  vim  commandOutputsToTextFile.sh
-  179  ./commandOutputsToTextFile.sh
-  180  vim JoeJunker.txt
-  181  vim  commandOutputsToTextFile.sh
-  182  ./commandOutputsToTextFile.sh
-  183  vim JoeJunker.txt
-  184  git add  commandOutputsToTextFile.sh
-  185  git commit -m "Appended command executions to text file and used echo to format headings and spaces.Also made sure file is cleared before loop starts"
-  186  git push
-  187  ls -l
-  188  vim JoeJunker.txt
-  189  open JoeJunker.txt
-  190  vim JoeJunker.txt
-  191  exit
-  192  ls
-  193  cd JoeJunkerCATCProject
-  194  ls
-  195  git add JoeJunker.txt
-  196  status
-  197  git commit -m "Auto generated text file from commands script"
-  198  git push
-  199  ls -l
-  200  cd ..
-  201  chmod 700 JoeJunkerCATCProject
-  202  ls -l
-  203  cd ..
-  204  chmod 755 JoeJunkerCATCProject
-  205  la
-  206  ls
-  207  cd joejunker
-  208  chmod 755 JoeJunkerCATCProject
-  209  ls
-  210  rm -r CATCProject
-  211  sudo rm -rf CATCProject
-  212  ls
-  213  ls -l
-  214  chmod 755 JoeJunkerCATCProject
-  215  ls -l
-  216  sudo chmod 755 JoeJunkerCATCProject
-  217  ls -l
-  218  chmod 777 JoeJunkerCATCProject
-  219  ls -l
-  220  chmod 700 JoeJunkerCATCProject
-  221  ls -l
-  222  lynx www.google.com
-  223  cd
-  224  lynx www.google.com
-  225  man lynx
-  226  sudo apt install lynx
-  227  sudo apt-get update
-  228  man lynx
-  229  sudo apt-get install lynx
-  230  man lynx
-  231  lynx www.google.com
-  232  ls
-  233  cd JoeJunkerCATCProject
-  234  ls
+   95  exit
+   96  ls
+   97  cd JoeJunkerCATCProject
+   98  ls
+   99  git add JoeJunker.txt
+  100  status
+  101  git commit -m "Auto generated text file from commands script"
+  102  git push
+  103  ls -l
+  104  cd ..
+  105  chmod 700 JoeJunkerCATCProject
+  106  ls -l
+  107  cd ..
+  108  chmod 755 JoeJunkerCATCProject
+  109  la
+  110  ls
+  111  cd joejunker
+  112  chmod 755 JoeJunkerCATCProject
+  113  ls
+  114  rm -r CATCProject
+  115  sudo rm -rf CATCProject
+  116  ls
+  117  ls -l
+  118  chmod 755 JoeJunkerCATCProject
+  119  ls -l
+  120  sudo chmod 755 JoeJunkerCATCProject
+  121  ls -l
+  122  chmod 777 JoeJunkerCATCProject
+  123  ls -l
+  124  chmod 700 JoeJunkerCATCProject
+  125  ls -l
+  126  lynx www.google.com
+  127  cd
+  128  lynx www.google.com
+  129  man lynx
+  130  sudo apt install lynx
+  131  sudo apt-get update
+  132  man lynx
+  133  sudo apt-get install lynx
+  134  man lynx
+  135  lynx www.google.com
+  136  ls
+  137  cd JoeJunkerCATCProject
+  138  ls
+  139  vim salaryScales.sh
+  140  chmod u+x salaryScales.sh
+  141  ./salaryScales.sh
+  142  vim salaryScales.sh
+  143  ./salaryScales.sh
+  144  vim salaryScales.sh
+  145  ./salaryScales.sh
+  146  vim salaryScales.sh
+  147  ./salaryScales.sh
+  148  vim salaryScales.sh
+  149  ./salaryScales.sh
+  150  vim salaryScales.sh
+  151  ./salaryScales.sh
+  152  vim salaryScales.sh
+  153  ./salaryScales.sh
+  154  vim salaryScales.sh
+  155  ./salaryScales.sh
+  156  vim salaryScales.sh
+  157  ./salaryScales.sh
+  158  vim salaryScales.sh
+  159  ./salaryScales.sh
+  160  vim salaryScales.sh
+  161  ./salaryScales.sh
+  162  vim salaryScales.sh
+  163  ./salaryScales.sh
+  164  vim salaryScales.sh
+  165  ./salaryScales.sh
+  166  git add startSalary.sh
+  167  ls
+  168  git add salaryScales.sh
+  169  vim salaryScales.sh
+  170  ./salaryScales.sh
+  171  git add salaryScales.sh
+  172  vim salaryScales.sh
+  173  git add salaryScales.sh
+  174  git commit -m "Initial commit .Simple for loop and if statement"
+  175  git push
+  176  ./salaryScales.sh
+  177  vim salaryScales.sh
+  178  ./salaryScales.sh
+  179  vim salaryScales.sh
+  180  ./salaryScales.sh
+  181  vim salaryScales.sh
+  182  ./salaryScales.sh
+  183  vim salaryScales.sh
+  184  ./salaryScales.sh
+  185  vim salaryScales.sh
+  186  ./salaryScales.sh
+  187  vim salaryScales.sh
+  188  ./salaryScales.sh
+  189  vim salaryScales.sh
+  190  ./salaryScales.sh
+  191  vim salaryScales.sh
+  192  ./salaryScales.sh
+  193  vim salaryScales.sh
+  194  ./salaryScales.sh
+  195  vim salaryScales.sh
+  196  ./salaryScales.sh
+  197  exit
+  198  vim salaryScales.sh
+  199  ls
+  200  rm salaryScales.sh
+  201  cd JoeJunkerCATCProject
+  202  ls
+  203  vim salaryScales.sh
+  204  ./salaryScales.sh
+  205  vim salaryScales.sh
+  206  ./salaryScales.sh
+  207  git add salaryScale.sh
+  208  ls
+  209  git add salaryScales.sh
+  210  git commit -m "Created headings and formatted the output from the for loop to align with the headings"
+  211  git push
+  212  vim salaryScales.sh
+  213  ./salaryScales.sh
+  214  vim salaryScales.sh
+  215  ./salaryScales.sh
+  216  vim salaryScales.sh
+  217  ./salaryScales.sh
+  218  vim salaryScales.sh
+  219  ./salaryScales.sh
+  220  vim salaryScales.sh
+  221  ./salaryScales.sh
+  222  vim salaryScales.sh
+  223  ./salaryScales.sh
+  224  vim salaryScales.sh
+  225  ./salaryScales.sh
+  226  vim salaryScales.sh
+  227  ./salaryScales.sh
+  228  vim salaryScales.sh
+  229  ./salaryScales.sh
+  230  vim salaryScales.sh
+  231  ./salaryScales.sh
+  232  wq
+  233  vim salaryScales.sh
+  234  ./salaryScales.sh
   235  vim salaryScales.sh
-  236  chmod u+x salaryScales.sh
-  237  ./salaryScales.sh
-  238  vim salaryScales.sh
-  239  ./salaryScales.sh
-  240  vim salaryScales.sh
-  241  ./salaryScales.sh
-  242  vim salaryScales.sh
-  243  ./salaryScales.sh
-  244  vim salaryScales.sh
-  245  ./salaryScales.sh
-  246  vim salaryScales.sh
-  247  ./salaryScales.sh
-  248  vim salaryScales.sh
+  236  ./salaryScales.sh
+  237  vim salaryScales.sh
+  238  ./salaryScales.sh
+  239  vim salaryScales.sh
+  240  ./salaryScales.sh
+  241  vim salaryScales.sh
+  242  ./salaryScales.sh
+  243  vim salaryScales.sh
+  244  ./salaryScales.sh
+  245  git add salaryScales.sh
+  246  git commit -m "Modified if else statment so ouput is now different for manager and employee. Logic issue in manager output to work on"
+  247  git push
+  248  ./salaryScales.sh
   249  ./salaryScales.sh
   250  vim salaryScales.sh
   251  ./salaryScales.sh
@@ -384,16 +383,16 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
   259  ./salaryScales.sh
   260  vim salaryScales.sh
   261  ./salaryScales.sh
-  262  git add startSalary.sh
-  263  ls
-  264  git add salaryScales.sh
-  265  vim salaryScales.sh
-  266  ./salaryScales.sh
-  267  git add salaryScales.sh
-  268  vim salaryScales.sh
-  269  git add salaryScales.sh
-  270  git commit -m "Initial commit .Simple for loop and if statement"
-  271  git push
+  262  vim salaryScales.sh
+  263  ./salaryScales.sh
+  264  vim salaryScales.sh
+  265  ./salaryScales.sh
+  266  vim salaryScales.sh
+  267  ./salaryScales.sh
+  268  :wq
+  269  vim salaryScales.sh
+  270  ./salaryScales.sh
+  271  vim salaryScales.sh
   272  ./salaryScales.sh
   273  vim salaryScales.sh
   274  ./salaryScales.sh
@@ -407,7 +406,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
   282  ./salaryScales.sh
   283  vim salaryScales.sh
   284  ./salaryScales.sh
-  285  vim salaryScales.sh
+  285  wq
   286  ./salaryScales.sh
   287  vim salaryScales.sh
   288  ./salaryScales.sh
@@ -415,21 +414,21 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
   290  ./salaryScales.sh
   291  vim salaryScales.sh
   292  ./salaryScales.sh
-  293  exit
-  294  vim salaryScales.sh
-  295  ls
-  296  rm salaryScales.sh
-  297  cd JoeJunkerCATCProject
-  298  ls
+  293  vim salaryScales.sh
+  294  ./salaryScales.sh
+  295  vim salaryScales.sh
+  296  ./salaryScales.sh
+  297  vim salaryScales.sh
+  298  ./salaryScales.sh
   299  vim salaryScales.sh
   300  ./salaryScales.sh
   301  vim salaryScales.sh
   302  ./salaryScales.sh
-  303  git add salaryScale.sh
-  304  ls
-  305  git add salaryScales.sh
-  306  git commit -m "Created headings and formatted the output from the for loop to align with the headings"
-  307  git push
+  303  vim salaryScales.sh
+  304  ./salaryScales.sh
+  305  vim salaryScales.sh
+  306  ./salaryScales.sh
+  307  git add salaryScales.sh
   308  vim salaryScales.sh
   309  ./salaryScales.sh
   310  vim salaryScales.sh
@@ -444,29 +443,29 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
   319  ./salaryScales.sh
   320  vim salaryScales.sh
   321  ./salaryScales.sh
-  322  vim salaryScales.sh
-  323  ./salaryScales.sh
-  324  vim salaryScales.sh
-  325  ./salaryScales.sh
-  326  vim salaryScales.sh
-  327  ./salaryScales.sh
-  328  wq
-  329  vim salaryScales.sh
-  330  ./salaryScales.sh
-  331  vim salaryScales.sh
-  332  ./salaryScales.sh
-  333  vim salaryScales.sh
-  334  ./salaryScales.sh
-  335  vim salaryScales.sh
-  336  ./salaryScales.sh
-  337  vim salaryScales.sh
-  338  ./salaryScales.sh
-  339  vim salaryScales.sh
-  340  ./salaryScales.sh
-  341  git add salaryScales.sh
-  342  git commit -m "Modified if else statment so ouput is now different for manager and employee. Logic issue in manager output to work on"
-  343  git push
-  344  ./salaryScales.sh
+  322  git add salaryScales.sh
+  323  git commit -m "Solved logic issue with variables and incrementing them at different points in the for loop" 
+  324  git push
+  325  exit
+  326  ./salaryScales.sh
+  327  cd JoeJunkerCATCProject
+  328  ./salaryScales.sh
+  329  git push
+  330  vim salaryScales.sh
+  331  ./salaryScales.sh
+  332  vim salaryScales.sh
+  333  ./salaryScales.sh
+  334  vim salaryScales.sh
+  335  ./salaryScales.sh
+  336  vim salaryScales.sh
+  337  ./salaryScales.sh
+  338  vim salaryScales.sh
+  339  ./salaryScales.sh
+  340  vim salaryScales.sh
+  341  ./salaryScales.sh
+  342  vim salaryScales.sh
+  343  ./salaryScales.sh
+  344  vim salaryScales.sh
   345  ./salaryScales.sh
   346  vim salaryScales.sh
   347  ./salaryScales.sh
@@ -479,20 +478,20 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
   354  vim salaryScales.sh
   355  ./salaryScales.sh
   356  vim salaryScales.sh
-  357  ./salaryScales.sh
+  357  git add salaryScales.sh
   358  vim salaryScales.sh
-  359  ./salaryScales.sh
-  360  vim salaryScales.sh
-  361  ./salaryScales.sh
+  359  git add salaryScales.sh
+  360  git commit -m "Added an invalid option for manager question. Also formatted employee output."
+  361  git push
   362  vim salaryScales.sh
   363  ./salaryScales.sh
-  364  :wq
-  365  vim salaryScales.sh
-  366  ./salaryScales.sh
-  367  vim salaryScales.sh
-  368  ./salaryScales.sh
-  369  vim salaryScales.sh
-  370  ./salaryScales.sh
+  364  vim salaryScales.sh
+  365  ./salaryScales.sh
+  366  vim salaryScales.sh
+  367  ./salaryScales.sh
+  368  vim salaryScales.sh
+  369  ./salaryScales.sh
+  370  wq
   371  vim salaryScales.sh
   372  ./salaryScales.sh
   373  vim salaryScales.sh
@@ -503,219 +502,221 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    458.7 avail Mem
   378  ./salaryScales.sh
   379  vim salaryScales.sh
   380  ./salaryScales.sh
-  381  wq
-  382  ./salaryScales.sh
-  383  vim salaryScales.sh
-  384  ./salaryScales.sh
-  385  vim salaryScales.sh
+  381  vim salaryScales.sh
+  382  git add salaryScales.sh
+  383  git commit -m "Added while loop to validate 'yes or no' question before headings are printed.Deleted else statement from last commit"
+  384  git push
+  385  ./salaryScales.sh
   386  ./salaryScales.sh
-  387  vim salaryScales.sh
+  387  wq
   388  ./salaryScales.sh
-  389  vim salaryScales.sh
-  390  ./salaryScales.sh
-  391  vim salaryScales.sh
-  392  ./salaryScales.sh
-  393  vim salaryScales.sh
-  394  ./salaryScales.sh
-  395  vim salaryScales.sh
-  396  ./salaryScales.sh
-  397  vim salaryScales.sh
-  398  ./salaryScales.sh
-  399  vim salaryScales.sh
-  400  ./salaryScales.sh
-  401  vim salaryScales.sh
-  402  ./salaryScales.sh
-  403  git add salaryScales.sh
-  404  vim salaryScales.sh
-  405  ./salaryScales.sh
-  406  vim salaryScales.sh
-  407  ./salaryScales.sh
-  408  vim salaryScales.sh
-  409  ./salaryScales.sh
-  410  vim salaryScales.sh
-  411  ./salaryScales.sh
-  412  vim salaryScales.sh
-  413  ./salaryScales.sh
-  414  vim salaryScales.sh
-  415  ./salaryScales.sh
-  416  vim salaryScales.sh
-  417  ./salaryScales.sh
-  418  git add salaryScales.sh
-  419  git commit -m "Solved logic issue with variables and incrementing them at different points in the for loop" 
-  420  git push
-  421  exit
-  422  ./salaryScales.sh
-  423  cd JoeJunkerCATCProject
-  424  ./salaryScales.sh
-  425  git push
-  426  vim salaryScales.sh
-  427  ./salaryScales.sh
-  428  vim salaryScales.sh
-  429  ./salaryScales.sh
-  430  vim salaryScales.sh
-  431  ./salaryScales.sh
-  432  vim salaryScales.sh
-  433  ./salaryScales.sh
-  434  vim salaryScales.sh
-  435  ./salaryScales.sh
-  436  vim salaryScales.sh
-  437  ./salaryScales.sh
-  438  vim salaryScales.sh
-  439  ./salaryScales.sh
-  440  vim salaryScales.sh
-  441  ./salaryScales.sh
-  442  vim salaryScales.sh
-  443  ./salaryScales.sh
-  444  vim salaryScales.sh
-  445  ./salaryScales.sh
-  446  vim salaryScales.sh
-  447  ./salaryScales.sh
-  448  vim salaryScales.sh
-  449  ./salaryScales.sh
-  450  vim salaryScales.sh
-  451  ./salaryScales.sh
-  452  vim salaryScales.sh
-  453  git add salaryScales.sh
-  454  vim salaryScales.sh
-  455  git add salaryScales.sh
-  456  git commit -m "Added an invalid option for manager question. Also formatted employee output."
-  457  git push
-  458  vim salaryScales.sh
-  459  ./salaryScales.sh
-  460  vim salaryScales.sh
-  461  ./salaryScales.sh
-  462  vim salaryScales.sh
-  463  ./salaryScales.sh
-  464  vim salaryScales.sh
-  465  ./salaryScales.sh
-  466  wq
-  467  vim salaryScales.sh
-  468  ./salaryScales.sh
-  469  vim salaryScales.sh
-  470  ./salaryScales.sh
-  471  vim salaryScales.sh
-  472  ./salaryScales.sh
-  473  vim salaryScales.sh
-  474  ./salaryScales.sh
-  475  vim salaryScales.sh
-  476  ./salaryScales.sh
-  477  vim salaryScales.sh
-  478  git add salaryScales.sh
-  479  git commit -m "Added while loop to validate 'yes or no' question before headings are printed.Deleted else statement from last commit"
-  480  git push
-  481  ./salaryScales.sh
-  482  ./salaryScales.sh
-  483  wq
-  484  ./salaryScales.sh
-  485  ˚
-  486  cd JoeJunkerCATCProject
-  487  ./JoeJunker.txt
-  488  ls
-  489  vim JoeJunker.txt
-  490  open JoeJunker.txt
-  491  ls
-  492  nano JoeJunker.txt
-  493  cat JoeJunker.txt
-  494  exit
-  495  ls
-  496  exit
-  497  # > writes to file >> appends to existing file
-  498  # create spaces and headings with echo.
-  499  # > at the beginning overwrites the file each time the shellscript is executed.
-  500  # >> appends everything afterwards to the new file content.
-  501  echo "------------- echo command -----------------" > JoeJunker.txt
-  502  # -e used so the string \n is interpreted as a new line command not a printable string.
-  503  echo -e "\n" >> JoeJunker.txt
-  504  echo Hello World >> JoeJunker.txt
+  389  ˚
+  390  cd JoeJunkerCATCProject
+  391  ./JoeJunker.txt
+  392  ls
+  393  vim JoeJunker.txt
+  394  open JoeJunker.txt
+  395  ls
+  396  nano JoeJunker.txt
+  397  cat JoeJunker.txt
+  398  exit
+  399  ls
+  400  exit
+  401  # > writes to file >> appends to existing file
+  402  # create spaces and headings with echo.
+  403  # > at the beginning overwrites the file each time the shellscript is executed.
+  404  # >> appends everything afterwards to the new file content.
+  405  echo "------------- echo command -----------------" > JoeJunker.txt
+  406  # -e used so the string \n is interpreted as a new line command not a printable string.
+  407  echo -e "\n" >> JoeJunker.txt
+  408  echo Hello World >> JoeJunker.txt
+  409  echo -e "\n" >> JoeJunker.txt
+  410  echo "------------- date command -----------------" >> JoeJunker.txt
+  411  echo -e "\n" >> JoeJunker.txt
+  412  date >> JoeJunker.txt
+  413  echo -e "\n" >> JoeJunker.txt
+  414  echo "------------- hostname command -----------------" >> JoeJunker.txt
+  415  echo -e "\n" >> JoeJunker.txt
+  416  hostname >> JoeJunker.txt
+  417  echo -e "\n" >> JoeJunker.txt
+  418  echo "------------- arch command -----------------" >> JoeJunker.txt
+  419  echo -e "\n" >> JoeJunker.txt
+  420  arch >> JoeJunker.txt
+  421  echo -e "\n" >> JoeJunker.txt
+  422  echo "------------- uname command -----------------" >> JoeJunker.txt
+  423  echo -e "\n" >> JoeJunker.txt
+  424  uname -a >> JoeJunker.txt
+  425  echo -e "\n" >> JoeJunker.txt
+  426  echo "------------- uptime command -----------------" >> JoeJunker.txt
+  427  echo -e "\n" >> JoeJunker.txt
+  428  uptime >> JoeJunker.txt:
+  429  echo -e "\n" >> JoeJunker.txt
+  430  echo "------------- whomai command -----------------" >> JoeJunker.txt
+  431  echo -e "\n" >> JoeJunker.txt
+  432  whoami >> JoeJunker.txt
+  433  echo -e "\n" >> JoeJunker.txt
+  434  echo "------------- who command -----------------" >> JoeJunker.txt
+  435  echo -e "\n" >> JoeJunker.txt
+  436  who >> JoeJunker.txt
+  437  echo -e "\n" >> JoeJunker.txt
+  438  echo "------------- w command -----------------" >> JoeJunker.txt
+  439  echo -e "\n" >> JoeJunker.txt
+  440  w >> JoeJunker.txt
+  441  echo -e "\n" >> JoeJunker.txt
+  442  echo "------------- top command -----------------" >> JoeJunker.txt
+  443  echo -e "\n" >> JoeJunker.txt
+  444  top -b -n1 >> JoeJunker.txt
+  445  history >> JoeJunker.txt
+  446  echo -e "\n" >> JoeJunker.txt
+  447  echo "------------- history command -----------------" >> JoeJunker.txt
+  448  echo -e "\n" >> JoeJunker.txt
+  449  history 50  >> JoeJunker.txt
+  450  # > writes to file >> appends to existing file
+  451  # create spaces and headings with echo.
+  452  # > at the beginning overwrites the file each time the shellscript is executed.
+  453  # >> appends everything afterwards to the new file content.
+  454  echo "------------- echo command -----------------" > JoeJunker.txt
+  455  # -e used so the string \n is interpreted as a new line command not a printable string.
+  456  echo -e "\n" >> JoeJunker.txt
+  457  echo Hello World >> JoeJunker.txt
+  458  echo -e "\n" >> JoeJunker.txt
+  459  echo "------------- date command -----------------" >> JoeJunker.txt
+  460  echo -e "\n" >> JoeJunker.txt
+  461  date >> JoeJunker.txt
+  462  echo -e "\n" >> JoeJunker.txt
+  463  echo "------------- hostname command -----------------" >> JoeJunker.txt
+  464  echo -e "\n" >> JoeJunker.txt
+  465  hostname >> JoeJunker.txt
+  466  echo -e "\n" >> JoeJunker.txt
+  467  echo "------------- arch command -----------------" >> JoeJunker.txt
+  468  echo -e "\n" >> JoeJunker.txt
+  469  arch >> JoeJunker.txt
+  470  echo -e "\n" >> JoeJunker.txt
+  471  echo "------------- uname command -----------------" >> JoeJunker.txt
+  472  echo -e "\n" >> JoeJunker.txt
+  473  uname -a >> JoeJunker.txt
+  474  echo -e "\n" >> JoeJunker.txt
+  475  echo "------------- uptime command -----------------" >> JoeJunker.txt
+  476  echo -e "\n" >> JoeJunker.txt
+  477  uptime >> JoeJunker.txt:
+  478  echo -e "\n" >> JoeJunker.txt
+  479  echo "------------- whomai command -----------------" >> JoeJunker.txt
+  480  echo -e "\n" >> JoeJunker.txt
+  481  whoami >> JoeJunker.txt
+  482  echo -e "\n" >> JoeJunker.txt
+  483  echo "------------- who command -----------------" >> JoeJunker.txt
+  484  echo -e "\n" >> JoeJunker.txt
+  485  who >> JoeJunker.txt
+  486  echo -e "\n" >> JoeJunker.txt
+  487  echo "------------- w command -----------------" >> JoeJunker.txt
+  488  echo -e "\n" >> JoeJunker.txt
+  489  w >> JoeJunker.txt
+  490  echo -e "\n" >> JoeJunker.txt
+  491  echo "------------- top command -----------------" >> JoeJunker.txt
+  492  echo -e "\n" >> JoeJunker.txt
+  493  top -b -n1 >> JoeJunker.txt
+  494  history >> JoeJunker.txt
+  495  echo -e "\n" >> JoeJunker.txt
+  496  echo "------------- history command -----------------" >> JoeJunker.txt
+  497  echo -e "\n" >> JoeJunker.txt
+  498  history 50  >> JoeJunker.txt
+  499  # > writes to file >> appends to existing file
+  500  # create spaces and headings with echo.
+  501  # > at the beginning overwrites the file each time the shellscript is executed.
+  502  # >> appends everything afterwards to the new file content.
+  503  echo "------------- echo command -----------------" > JoeJunker.txt
+  504  # -e used so the string \n is interpreted as a new line command not a printable string.
   505  echo -e "\n" >> JoeJunker.txt
-  506  echo "------------- date command -----------------" >> JoeJunker.txt
+  506  echo Hello World >> JoeJunker.txt
   507  echo -e "\n" >> JoeJunker.txt
-  508  date >> JoeJunker.txt
+  508  echo "------------- date command -----------------" >> JoeJunker.txt
   509  echo -e "\n" >> JoeJunker.txt
-  510  echo "------------- hostname command -----------------" >> JoeJunker.txt
+  510  date >> JoeJunker.txt
   511  echo -e "\n" >> JoeJunker.txt
-  512  hostname >> JoeJunker.txt
+  512  echo "------------- hostname command -----------------" >> JoeJunker.txt
   513  echo -e "\n" >> JoeJunker.txt
-  514  echo "------------- arch command -----------------" >> JoeJunker.txt
+  514  hostname >> JoeJunker.txt
   515  echo -e "\n" >> JoeJunker.txt
-  516  arch >> JoeJunker.txt
+  516  echo "------------- arch command -----------------" >> JoeJunker.txt
   517  echo -e "\n" >> JoeJunker.txt
-  518  echo "------------- uname command -----------------" >> JoeJunker.txt
+  518  arch >> JoeJunker.txt
   519  echo -e "\n" >> JoeJunker.txt
-  520  uname -a >> JoeJunker.txt
+  520  echo "------------- uname command -----------------" >> JoeJunker.txt
   521  echo -e "\n" >> JoeJunker.txt
-  522  echo "------------- uptime command -----------------" >> JoeJunker.txt
+  522  uname -a >> JoeJunker.txt
   523  echo -e "\n" >> JoeJunker.txt
-  524  uptime >> JoeJunker.txt:
+  524  echo "------------- uptime command -----------------" >> JoeJunker.txt
   525  echo -e "\n" >> JoeJunker.txt
-  526  echo "------------- whomai command -----------------" >> JoeJunker.txt
+  526  uptime >> JoeJunker.txt
   527  echo -e "\n" >> JoeJunker.txt
-  528  whoami >> JoeJunker.txt
+  528  echo "------------- whomai command -----------------" >> JoeJunker.txt
   529  echo -e "\n" >> JoeJunker.txt
-  530  echo "------------- who command -----------------" >> JoeJunker.txt
+  530  whoami >> JoeJunker.txt
   531  echo -e "\n" >> JoeJunker.txt
-  532  who >> JoeJunker.txt
+  532  echo "------------- who command -----------------" >> JoeJunker.txt
   533  echo -e "\n" >> JoeJunker.txt
-  534  echo "------------- w command -----------------" >> JoeJunker.txt
+  534  who >> JoeJunker.txt
   535  echo -e "\n" >> JoeJunker.txt
-  536  w >> JoeJunker.txt
+  536  echo "------------- w command -----------------" >> JoeJunker.txt
   537  echo -e "\n" >> JoeJunker.txt
-  538  echo "------------- top command -----------------" >> JoeJunker.txt
+  538  w >> JoeJunker.txt
   539  echo -e "\n" >> JoeJunker.txt
-  540  top -b -n1 >> JoeJunker.txt
-  541  history >> JoeJunker.txt
+  540  echo "------------- top command -----------------" >> JoeJunker.txt
+  541  echo -e "\n" >> JoeJunker.txt
+  542  top -b -n1 >> JoeJunker.txt
+  543  history >> JoeJunker.txt
 
 
 ------------- history command -----------------
 
 
-  496  exit
-  497  # > writes to file >> appends to existing file
-  498  # create spaces and headings with echo.
-  499  # > at the beginning overwrites the file each time the shellscript is executed.
-  500  # >> appends everything afterwards to the new file content.
-  501  echo "------------- echo command -----------------" > JoeJunker.txt
-  502  # -e used so the string \n is interpreted as a new line command not a printable string.
-  503  echo -e "\n" >> JoeJunker.txt
-  504  echo Hello World >> JoeJunker.txt
+  498  history 50  >> JoeJunker.txt
+  499  # > writes to file >> appends to existing file
+  500  # create spaces and headings with echo.
+  501  # > at the beginning overwrites the file each time the shellscript is executed.
+  502  # >> appends everything afterwards to the new file content.
+  503  echo "------------- echo command -----------------" > JoeJunker.txt
+  504  # -e used so the string \n is interpreted as a new line command not a printable string.
   505  echo -e "\n" >> JoeJunker.txt
-  506  echo "------------- date command -----------------" >> JoeJunker.txt
+  506  echo Hello World >> JoeJunker.txt
   507  echo -e "\n" >> JoeJunker.txt
-  508  date >> JoeJunker.txt
+  508  echo "------------- date command -----------------" >> JoeJunker.txt
   509  echo -e "\n" >> JoeJunker.txt
-  510  echo "------------- hostname command -----------------" >> JoeJunker.txt
+  510  date >> JoeJunker.txt
   511  echo -e "\n" >> JoeJunker.txt
-  512  hostname >> JoeJunker.txt
+  512  echo "------------- hostname command -----------------" >> JoeJunker.txt
   513  echo -e "\n" >> JoeJunker.txt
-  514  echo "------------- arch command -----------------" >> JoeJunker.txt
+  514  hostname >> JoeJunker.txt
   515  echo -e "\n" >> JoeJunker.txt
-  516  arch >> JoeJunker.txt
+  516  echo "------------- arch command -----------------" >> JoeJunker.txt
   517  echo -e "\n" >> JoeJunker.txt
-  518  echo "------------- uname command -----------------" >> JoeJunker.txt
+  518  arch >> JoeJunker.txt
   519  echo -e "\n" >> JoeJunker.txt
-  520  uname -a >> JoeJunker.txt
+  520  echo "------------- uname command -----------------" >> JoeJunker.txt
   521  echo -e "\n" >> JoeJunker.txt
-  522  echo "------------- uptime command -----------------" >> JoeJunker.txt
+  522  uname -a >> JoeJunker.txt
   523  echo -e "\n" >> JoeJunker.txt
-  524  uptime >> JoeJunker.txt:
+  524  echo "------------- uptime command -----------------" >> JoeJunker.txt
   525  echo -e "\n" >> JoeJunker.txt
-  526  echo "------------- whomai command -----------------" >> JoeJunker.txt
+  526  uptime >> JoeJunker.txt
   527  echo -e "\n" >> JoeJunker.txt
-  528  whoami >> JoeJunker.txt
+  528  echo "------------- whomai command -----------------" >> JoeJunker.txt
   529  echo -e "\n" >> JoeJunker.txt
-  530  echo "------------- who command -----------------" >> JoeJunker.txt
+  530  whoami >> JoeJunker.txt
   531  echo -e "\n" >> JoeJunker.txt
-  532  who >> JoeJunker.txt
+  532  echo "------------- who command -----------------" >> JoeJunker.txt
   533  echo -e "\n" >> JoeJunker.txt
-  534  echo "------------- w command -----------------" >> JoeJunker.txt
+  534  who >> JoeJunker.txt
   535  echo -e "\n" >> JoeJunker.txt
-  536  w >> JoeJunker.txt
+  536  echo "------------- w command -----------------" >> JoeJunker.txt
   537  echo -e "\n" >> JoeJunker.txt
-  538  echo "------------- top command -----------------" >> JoeJunker.txt
+  538  w >> JoeJunker.txt
   539  echo -e "\n" >> JoeJunker.txt
-  540  top -b -n1 >> JoeJunker.txt
-  541  history >> JoeJunker.txt
-  542  echo -e "\n" >> JoeJunker.txt
-  543  echo "------------- history command -----------------" >> JoeJunker.txt
+  540  echo "------------- top command -----------------" >> JoeJunker.txt
+  541  echo -e "\n" >> JoeJunker.txt
+  542  top -b -n1 >> JoeJunker.txt
+  543  history >> JoeJunker.txt
   544  echo -e "\n" >> JoeJunker.txt
-  545  history 50  >> JoeJunker.txt
+  545  echo "------------- history command -----------------" >> JoeJunker.txt
+  546  echo -e "\n" >> JoeJunker.txt
+  547  history 50  >> JoeJunker.txt
