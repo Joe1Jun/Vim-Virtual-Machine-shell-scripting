@@ -34,7 +34,7 @@ uname -a >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
 echo "------------- uptime command -----------------" >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
-uptime >> JoeJunker.txt:
+uptime >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
 echo "------------- whomai command -----------------" >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
