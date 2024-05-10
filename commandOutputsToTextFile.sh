@@ -48,11 +48,13 @@ echo "------------- w command -----------------" >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
 w >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
-echo "------------- top command -----------------" >> JoeJunker.txt
+#keeps top in batch mode and only runs one iteration to not overload file.
+echo "------------- top -b -n1  command -----------------" >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
 top -b -n1 >> JoeJunker.txt
 history >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
-echo "------------- history command -----------------" >> JoeJunker.txt
+#only shows previous 50 previous histories.
+echo "------------- history 50 command -----------------" >> JoeJunker.txt
 echo -e "\n" >> JoeJunker.txt
 history 50  >> JoeJunker.txt
